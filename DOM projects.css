@@ -1,0 +1,27 @@
+.js-subscribe-button{
+    width: 100px;
+    height: 35px;
+    border: none;
+color: white;
+font-weight: bold;
+background-color: black;
+border-radius: 70px;
+cursor: pointer;
+
+}
+.is-subscribed{
+    background-color: rgb(240, 240, 240);
+    color: black;
+}
+.cost-input{
+    font-size: 15px;
+
+    color: white;
+    background-color: green;
+    padding: 6px ;
+
+}
+.js-cost-input{
+    padding: 6px;
+    text-align: left;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <button>great job!</button>
+<button class="js-button">second-button</button>
+    <script>
+    const object={
+//         method: function function1(){
+//           console.log('method');
+//         }
+   method(){
+    console.log('method');
+}
+    };
+   console.log(object);
+   object.method();
+   console.log(object.method());
+   console.log(document.body);
+   console.log(typeof document.body);
+   document.body.innerHTML='<button>great job!</button>';
+  console.log(document.querySelector('button'));
+  console.log(document.querySelector('button').innerHTML);
+  document.querySelector('button').innerHTML='changed';
+  const buttonElement=document.querySelector('.js-button');
+
+  console.log(buttonElement);
+</script>
+</body>
+</html>

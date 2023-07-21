@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM PROJECTS</title>
+    <link rel="stylesheet" href="DOM projects.css">
+</head>
+<body>
+    <p>Youtube Subscribe Button</p>
+    <button class="js-subscribe-button"
+    onclick="
+   subscribe();
+    "
+    >Subscribe</button>
+<p>Amazon shiping calculator</p>
+<!-- onkeydown=" onkeydown="console.log('typing') " -->
+<input placeholder="cost of order" class="js-cost-input" 
+onkeydown="handleCostKeydown(event)";
+
+>
+<button onclick="
+calculatetotal();
+"
+class="cost-input"> Calculate</button>
+<p class="js-total-cost"></p>
+    <script>
+function subscribe(){
+    const buttonElement=document.querySelector('.js-subscribe-button');
+    if(buttonElement.innerHTML==='Subscribe'){
+        buttonElement.innerHTML='Subscribed';
+        buttonElement.classList.add('is-subscribed');
+    }
+    else{
+        buttonElement.innerHTML='Subscribe';
+        buttonElement.classList.remove('is-subscribed');
+    }
+}
+
+function calculatetotal(){
+    const inputELement=document.querySelector('.js-cost-input');
+    let input=Number(inputELement.value);
+if(input<40&&input){
+input+=10;
+}
+document.querySelector('.js-total-cost').innerHTML=`$${input}`;
+}
+function handleCostKeydown(event){
+    
+if(event.key==='Enter'){
+    calculatetotal();
+}
+}
+    </script>
+</body>
+</html>
